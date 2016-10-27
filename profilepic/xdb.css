@@ -1,0 +1,710 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+
+/*resizing background*/
+/*#bg { z-index: -30;
+  position: fixed; 
+  top: 0; 
+  left: 0;*/ 	
+  /* Preserve aspet ratio */
+/*  min-width: 100%;
+  min-height: 100%;
+}*/
+#loadingDiv{display:none;}
+.loader {display: :none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: blue;
+	background: url() center no-repeat rgba( 150,150,150,.80);
+	background-size: 400px 400px;
+}
+
+@font-face {font-family: abs;
+			src: url(absender.ttf);}
+
+@font-face {font-family: fsans;
+			src: url(fsans.otf);}
+
+@font-face {font-family: nkmono;
+			src: url(nk57monospacecdit.ttf);}
+
+@font-face {font-family: bn;
+			src: url(bn.otf);}			
+
+@font-face {font-family: roboto;
+			src: url(robotolight.ttf);}				
+
+@font-face {font-family: watt;
+			src: url(squarethin.ttf);}		
+
+a {text-decoration: none;
+	color:rgb(130, 130, 130);
+	font-style: italic;}
+
+#bod {background-color: rgb(240,240,240);
+	  overflow:hidden;}
+
+#dbholder { background-color: rgb(240,240,240);
+			height: 900px;
+			overflow: hidden}
+
+#mainholder{margin-left: 40%;
+	    	margin-top: 35px;
+   			width: 201px;
+		    float:left;
+		    -webkit-transition: margin-left 1s; /* Safari 3.1 to 6.0 */
+    transition: margin-left 1s;}	
+
+#info {font-family: roboto;
+	   color:black;
+	   font-size: 15px;
+	   overflow:hidden;}		
+
+#xlogo {
+		height:200px;
+		width:200px;
+}
+#marquee{    width: 400px;
+
+    margin: 0px;
+    }
+/*#pic {
+	position:absolute;
+		height:200px;
+		width:200px;
+		z-index:4;}*/
+
+#maintitle{ width: 210px;
+    		margin-left: 0px;
+			font-family: abs;
+			font-size: 52px;
+			color:rgb(130, 130, 130);}
+
+#subtitle{font-family: abs;
+font-size: 24px;
+color:rgb(130, 130, 130);
+margin-left: 8px;}
+
+#expos {font-size: 18px;
+color:rgb(110, 110, 110);
+font-family: roboto;
+text-align: center;
+}			
+#dbasebutthold{display: none;}
+
+#dbasebutt{cursor:pointer;}
+
+#tlinebutt{cursor:pointer;}
+
+
+.iconholder{position:fixed;
+			right:0px;
+			top:0px;
+			    width: 51px;
+    height: 56px;
+    margin: 10px;
+}
+.icon {height:50px;
+		width:50px;}		
+
+#ui{ margin-top: 10px;
+height: 300px;
+width: 291px;
+display: inline-block;
+margin-left: -49px;
+	}
+#error {color:yellow;
+		display:none;}
+#charnames {
+    width: 115px;
+    height: 20px;
+    font-size: 18px;
+    padding: 3px;
+    color:red;
+    font-family: roboto;
+    background-color: rgb(158,158,158);
+    border: 0px;
+    border-radius: 5px;
+	margin-top: 12px;
+margin-left: 40px;
+	text-align:center;}
+
+#pushbutt {height: 24px;
+    width: 30px;
+    margin-left: 6px;
+	display:none;}
+
+#datacontain {
+		display:none;
+		padding:10px;
+		overflow:hidden;
+		float:left;
+		margin-left: 8%;
+margin-top: 2%;
+	border-radius: 15px;	
+	height:534px;
+	width: 760px;
+	border:1px solid rgb(130, 130, 130);
+}
+
+#info { position: absolute;
+    height: 500px;
+    width: 400px;
+    overflow:hidden;
+    margin-top: 21px;
+	}
+
+#info2{cursor: pointer;
+	top:0px;
+	left:0px;
+	margin-left: 5px;
+	position: relative
+	left:0;
+	color:rgb(95, 95, 95);
+
+}
+#logholder{height:200px;
+			width: 200px;
+			border-radius: 100px;
+    overflow: hidden;}
+
+#firstapp {	
+		    height: 0px;
+   			 width: 0px;
+		margin-left: 360px;
+		margin-top: 21px;}
+
+#cover {    height:504px;
+    width: 330px;
+	margin-left: 63px;
+margin-top: 0px;}
+
+#closer {float: left;
+right: 0px;
+top: -3px;
+position: relative;
+cursor: pointer;
+font-size: 17px;
+width: 19px;
+margin-left: 350px;}
+
+#top{float: left;
+right: -13px;
+top: 3px;
+position: relative;
+cursor: pointer;
+font-size: 17px;
+width: 20px;
+margin-left: 367px;}
+
+#transit {height:2000px;
+	background-color: rgb(240,240,240);}
+
+#tlineexpos {
+    height: 284px;
+    width: 195px;
+    display: inline-block;
+    float: left;
+	margin-left: 10px;
+    margin-top: 20px;
+	padding:3px;
+	margin-right: 10px
+	}
+
+#subtitle2{font-family: abs;
+font-size: 35px;
+color:rgb(130, 130, 130);
+margin-left: 8px;
+margin-top: 10px}
+
+#xlogo2 {
+		height: 150px;
+		width: 150px;
+		margin-left: 23px;
+		}
+
+#expos2 {
+	font-size: 15px;
+color:rgb(110, 110, 110);
+font-family: roboto;
+text-align: center;	
+margin-top:5px 	
+		}		
+
+#tpicinfo {height:0px;
+    width: 0px;
+}
+
+#tlinepic63 {display: none;
+				float:left;
+		}
+
+.single{height:290px;
+		width:100px;
+		display:inline-block;
+		margin-left: 0px;
+		float:left;
+		border-radius: 4px;
+		overflow: hidden;
+		padding-top: 7px;
+}
+.tlinecloser{cursor: pointer;
+position: absolute;
+z-index: 5;
+font-size: 50px;
+margin-top: 7px;
+font-family: roboto;
+color: #F00;
+margin-left: -17px;width: 21px;}
+
+.tlineholder0{
+			display:inline-block;
+			float:left;
+			margin-left: 10px;
+			margin-top: 20px;
+			border-radius: 4px;
+			overflow: hidden;
+			width:261px;
+			border:1px solid rgb(130, 130, 130);}
+
+.tlineholder0a{
+			display:inline-block;
+			float:left;
+			margin-left: 10px;
+			margin-top: 20px;
+			border-radius: 4px;
+			overflow: hidden;
+			width:137px;
+			border:1px solid rgb(130, 130, 130);}		
+
+.tlineholder0b{
+			display:inline-block;
+			float:left;
+			margin-left: 10px;
+			margin-top: 20px;
+			border-radius: 4px;
+			overflow: hidden;
+			width:377px;
+			border:1px solid rgb(130, 130, 130);}					
+
+.tlineholder{
+			height:290px;
+			width:100px;
+			display:inline-block;
+			float:left;
+			margin-left: 10px;
+			border-radius: 4px;
+			overflow: hidden}
+
+.tlineholder2{
+			height:290px;
+			width:100px;
+			display:inline-block;
+			float:left;
+			margin-left: 10px;
+			border-radius: 4px;
+			overflow: hidden}	
+
+.tlineholder3{
+			height:290px;
+			width:100px;
+			display:inline-block;
+			float:left;
+			margin-left: 10px;
+			margin-top: 20px;
+			border-radius: 4px;
+			overflow: hidden}					
+
+#th1{ 
+		width:202px;}
+#th1a {margin-top: 0px;
+		margin-left:0px;
+	border:0px;
+padding-top: 7px;}
+#th1b {margin-top: 0px;	
+		margin-left: 2px;
+		border:0px;
+	padding-top: 7px;}
+#six3 { position: absolute;
+    	margin-top: 213px;
+	    margin-left: 80px;
+	padding-top: 6px;}
+
+#th6{ 	width:202px;}
+#th6a {margin-top: 0px;
+		margin-left:0px;
+	padding-top: 6px;}
+#th6b {margin-top: 0px;	
+		margin-left: 2px;
+	padding-top: 7px;}
+#seven5 { position: absolute;
+    	margin-top: 213px;
+	    margin-left: 80px;
+	    padding-top: 6px;}
+
+#th13a { width: 305px;}
+#th13 {margin-top: 0px;
+		margin-left: 0px;
+	padding-top: 7px;}
+#th14 {margin-top: 0px;	
+		margin-left: 2px;
+		padding-top: 7px;}
+#th14a {margin-top: 0px;	
+		margin-left: 2px;
+		padding-top: 7px;}
+#eight9 { position: absolute;
+    	    margin-top: 213px;
+    		margin-left: 124px;
+    		padding-top: 6px;}
+
+#th26 {
+		width:202px;}
+#th26a {margin-top: 0px;
+		margin-left:0px;
+		padding-top: 7px;}
+#th26b {margin-top: 0px;	
+		margin-left: 2px;
+		padding-top: 7px;}
+#zero4 { position: absolute;
+    	margin-top: 213px;
+	    margin-left: 80px;
+		padding-top: 6px;}    		
+
+#th23 { width: 305px;}
+#th23a{margin-top: 0px;
+		margin-left: 0px;
+		padding-top: 7px;}
+#th23b {margin-top: 0px;	
+		margin-left: 2px;
+		padding-top: 7px;}
+#th23c {margin-top: 0px;	
+		margin-left: 2px;
+		padding-top: 7px;}
+#zero1 { position: absolute;
+    	    margin-top: 213px;
+    		margin-left: 124px;
+    		padding-top: 6px;}
+
+#th28 { width: 202px;}
+#th28a{margin-top: 0px;
+		margin-left: 0px;
+		padding-top: 7px;}
+#th28b {margin-top: 0px;	
+		margin-left: 2px;
+		padding-top: 7px;}
+#th28c {margin-top: 0px;	
+		margin-left: 2px;
+		padding-top: 7px;}
+#zero6 { position: absolute;
+    	    margin-top: 213px;
+    		margin-left: 80px;
+    		padding-top: 6px;}   
+
+#th30 { width: 202px;}
+#th30a{margin-top: 0px;
+		margin-left: 0px;
+		padding-top: 7px;}
+#th30b {margin-top: 0px;	
+		margin-left: 2px;
+		padding-top: 7px;}
+#th30c {margin-top: 0px;	
+		margin-left: 2px;
+		padding-top: 7px;}
+#zero8 { position: absolute;
+    	    margin-top: 213px;
+    		margin-left: 80px;
+    		padding-top: 6px;}    
+
+#th31 { width: 305px;}
+#th31a{margin-top: 0px;
+		margin-left: 0px;
+		padding-top: 7px;}
+#th31b {margin-top: 0px;	
+		margin-left: 2px;
+		padding-top: 7px;}
+#th31c {margin-top: 0px;	
+		margin-left: 2px;
+		padding-top: 7px;}
+#zero9 { position: absolute;
+    	    margin-top: 213px;
+    		margin-left: 124px;
+    		padding-top: 6px;} 	
+
+#th35{width:202px;}
+#th35a {margin-top: 0px;
+		margin-left:0px;
+		padding-top: 7px;}
+#th35b {margin-top: 0px;	
+		margin-left: 2px;
+		padding-top: 7px;}
+#one3 { position: absolute;
+    	margin-top: 213px;
+	    margin-left: 80px;
+		padding-top: 6px;}	
+
+/*.tlinepic63 {	height:50px;
+			width:100px;
+			margin: 0px}
+
+.tlinepic66 {	height:50px;
+			width:100px;
+			margin: 0px}	*/
+
+.tlinepic {	cursor: pointer;
+	height:50px;
+			width:100px;
+			margin: 0px}
+
+
+
+
+.year { color:rgb(130, 130, 130);
+		font-family:bn;
+		font-size: 74px;
+margin-left: 20px;
+position: absolute;}
+
+.tlinecover{    margin-top: 6px;
+    margin-left: 3px;
+width:128px;
+height:202px;}
+#tlinepicth1{display:none;}
+#tlinepicth2{display:none;}
+#tlinepicth3{display:none;}
+#tlinepicth4{display:none;}
+#tlinepicth5{display:none;}
+#tlinepicth6{display:none;}
+#tlinepicth7{display:none;}
+#tlinepicth8{display:none;}
+#tlinepicth9{display:none;}
+#tlinepicth10{display:none;}
+#tlinepicth11{display:none;}
+#tlinepicth12{display:none;}
+#tlinepicth13a{display:none;}
+#tlinepicth14{display:none;}
+#tlinepicth15{display:none;}
+#tlinepicth16{display:none;}
+#tlinepicth17{display:none;}
+#tlinepicth18{display:none;}
+#tlinepicth19{display:none;}
+#tlinepicth20{display:none;}
+#tlinepicth21{display:none;}
+#tlinepicth22{display:none;}
+#tlinepicth23{display:none;}
+#tlinepicth24{display:none;}
+#tlinepicth25{display:none;}
+#tlinepicth26{display:none;}
+#tlinepicth27{display:none;}
+#tlinepicth28{display:none;}
+#tlinepicth29{display:none;}
+#tlinepicth30{display:none;}
+#tlinepicth31{display:none;}
+#tlinepicth32{display:none;}
+#tlinepicth33{display:none;}
+#tlinepicth34{display:none;}
+#tlinepicth35{display:none;}
+#tlinepicth36{display:none;}
+
+.listholder {
+display: none;
+float: left;
+width: 313px;
+height: 290px;
+margin-left: 20px;}
+.tlinelister{ font-size: 12px;
+font-family: roboto;
+margin-top: 0px;
+margin-left: 7px;
+color: #5F5F5F;
+line-height: 13px;
+}
+
+.tlineprof{height: 202px;
+width:165px;
+margin-left: 7px;}		
+
+#beast { margin-top: 104px}
+#mimic {margin-top: 157px}
+#changeling {margin-top: 157px}
+#polaris {margin-top: 157px}
+#havok {margin-top: 157px}
+#sunfire {margin-top: 51px}
+#phoenixforce {margin-top: 157px}
+#shadowcat {margin-top: 157px}
+#lockheed {margin-top: 104px}
+#rachelsummers {margin-top: 104px}
+#longshot {margin-top: 157px}
+#psylocke {margin-top: 104px}
+#multipleman {margin-top:104px;}
+#jubilee {margin-top: 104px}
+#bishop {margin-top: 157px}
+#revanche {margin-top: 157px}
+#cannonball {margin-top: 157px}
+#joseph {margin-top: 157px}
+#ceciliareyes {margin-top: 52px}
+#skrull{margin-top: 104px}
+#nealshaara {margin-top: 104px}
+#chamber {margin-top: 157px}
+#stacyx {margin-top: 51px}
+#husk {margin-top: 104px}
+#stepfordcuckoos { margin-top: 105px}
+#mystique {margin-top: 157px}
+#armor {margin-top: 104px}
+#magma{margin-top: 157px}
+#dagger {margin-top: 157px}
+#x23 {margin-top: 104px}
+#doop {margin-top: 157px}
+#krakoa {margin-top: 104px}
+#marvelgirl2 {margin-top: 157px}
+#firestar{margin-top:51px;}
+
+.nametag{ 
+			height:290px;
+			width:42px;
+			display:inline-block;
+			float:left;
+			margin-left: 0px;		
+			border-radius: 4px;
+			overflow: hidden;
+}
+
+.nametag2{ 
+			height:290px;
+			width:20px;
+			display:inline-block;
+			float:left;
+			border-radius: 4px;
+			overflow: hidden;}
+
+.nametag3{ 
+			height:290px;
+			width:54px;
+			display:inline-block;
+			float:left;
+			margin-left: 0px;
+		
+			border-radius: 4px;
+			overflow: hidden;
+}			
+
+.namelister{-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    transform: rotate(-90deg);
+float: left;
+display: inline-block;
+text-align: left;
+color:rgb(130, 130, 130);
+font-family: bn;
+letter-spacing: 2px;
+font-size: 16px;
+width: 328px;
+margin-top: 111px;
+margin-left: -150px;}
+
+
+
+#profx{    margin-top: 123px;
+    margin-right: -134px;
+    margin-bottom: 116px;
+    margin-left: -118px;
+width: 291px;}
+
+
+#ncrawl{ margin: 124px -134px 116px -118px;
+width: 291px;
+font-size: 13px;}
+
+
+#sund{    margin-top: 118px;
+    margin-right: -134px;
+    margin-bottom: 116px;
+    margin-left: -112px;
+font-size: 14px;
+width: 292px;}  
+
+#xrn{    margin: 115px -134px 116px -114px;
+font-size: 16px;
+width: 292px;} 
+
+#dst{    margin: 149px -134px 116px -92px;
+width: 240px;}
+
+#sbtoot{   margin: 135px -134px 116px -107px;
+width: 259px;
+font-size: 14px;}
+
+#aur{    margin: 130px -134px 116px -111px;
+width: 279px;}
+
+#sund2{    margin-top: 117px;
+    margin-right: -134px;
+    margin-bottom: 116px;
+    margin-left: -112px;
+font-size: 14px;
+width: 292px;}  
+
+#profx2{ margin: 138px -134px 116px -103px;
+width: 261px;}
+
+
+
+/*turn namelister into id's and common traits into classes set positioning rules turn off the nametag blue/
