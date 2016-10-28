@@ -109,6 +109,7 @@ function namer()
        else if (parwid === 305)
        {
        	$("#"+z).parent().parent().animate({width: "637px"},1000);
+       	$("#"+z).parent().parent().parent().animate({width: "727px"},1000);
        };
 	
 		$("#"+y+par+"lister").load( "brief/"+z+".txt");
@@ -142,6 +143,7 @@ function namer()
        else if (parwid === 637)
        {
        	$("#"+z1).parent().parent().animate({width: "305px"},1000);
+       	$("#"+z1).parent().parent().parent().animate({width: "370px"},1000);
        };
 
 		});
