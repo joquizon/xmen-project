@@ -4,44 +4,34 @@
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset-context/cssreset-context-min.css">
 	<script src="jquerymain.js"></script>
 	<link rel="stylesheet" type="text/css" href="xdb.css">
+	<link rel="stylesheet" type="text/css" href="xdbmob.css">
 	<script src="xdb.js"></script>
 	<script src="jquery-ui.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body id="bod">
-	<p id="ajaxsend"> 
-	
+<body class="bod">
+	<div class="loader" id="err">
+	<img src="xloader.gif" class="preloader">
+	</img>
+	<img src="xloader2.gif" class="preloader">
+	</img>
+	<img src="error.gif" class="preloader">
+</div>
 	</p>
-	<div id="dbholder">
+	<div class="dbholder">
 		<div id="mainholder">
-			<img id="xlogo" src="xlogo.png">	
-<!-- 		<img  id="pic" src="placeholder.png"> -->
-			<p id="maintitle">
-				CENSUS-X 
-			</p>
-			
-			<p id="subtitle">
-				EVERY X-MEN EVER
-			</p>
-			
-<input type="text" id="charnames" class="input" value="banshee">
-				<img src="pushbutt.png" id ="pushbutt">
-			<div id="ui">
-				
-				<p id="expos">
-				This infographic is based on information from a January 2015 
-					<a href="http://www.ign.com/articles/2015/01/16/every-x-man-ever?page=1" target="_blank">
-						article
-					</a> 
-				by IGN.com's Scott Collura.
-				In this section you may enter the name of a member, former or current, in the box above and display information about them. Click and drag the text to read on.The cover displayed is the issue in which the member joined the team. Clicking the hourglass icon on the top right will open the time line section. 
-				</p>
-			</div>
+			<div id="logholder">
+			<img id="xlogo" src="xlogo2.png">
+			</div>	
 
 			
-			<div class="iconholder">
-				<img class="icon" id="tlinebutt" src="tlineicon.png">
-			</div>
-	
+			
+			
+
+			
+		
 		</div>
 		<div id="datacontain">
 			<img id="top" src="bttop.png">
@@ -64,18 +54,27 @@
 	<div class="iconholder" id="dbasebutthold">
 		<img class="icon" id="dbasebutt" src="dbase.png">
 	</div>
-
+<input type="text" id="charnames" class="input" value="banshee">
+				<img src="pushbutt.png" id ="pushbutt">
 <!-- info for timeline box -->
-	
-	<div id="tlineexpos">
-		<img id="xlogo2" src="xlogo.png">
-		<p id="subtitle2">
-			Sequence-x
-		</p>
+<div id="tlineexpos">
+		<img id="xlogo2" src="xlogo3.png">
+		
 		<p id="expos2">
-			This is the timeline section. The X-men are grouped by the year in which they joined the team. Click any member and find out more.
+			<span id="subtitle2">
+				Sequence-x
+			</span><br>
+			This infographic is based on information from a 1/2015 
+					<a href="http://www.ign.com/articles/2015/01/16/every-x-man-ever?page=1" target="_blank">
+						article
+					</a> 
+				by IGN's Scott Collura.The X-men are grouped by the year in which they joined the team. Click any current or former member for a brief description. Type in their name into the input field to learn even more.
 		</p>
 	</div>
+<div id="tlineboss">	
+<div id="timelinecontainer">
+	
+	
 <!-- 1963 -->
 	<div class="tlineholder0">
 		<div class="nametag">
@@ -93,6 +92,9 @@
 				<img class="tlinepic" id="iceman" src="tlinepic/iceman.jpg">
 	
 				<img class="tlinepic" id="angel" src="tlinepic/angel.jpg">
+				<p class="year">
+					1963
+				</p>
 			</div>
 
 			<div class="tlineholder" id="th1b">
@@ -101,12 +103,9 @@
 				<img class="tlinepic" id="marvelgirl" src="tlinepic/marvelgirl.jpg">
 			</div>
 
-			<p class="year" id="six3">
-				63
-			</p>
+			
 
 			<div class="listholder" id="listholderth1">
-				<img class="tlinecloser" src="datacloser.png" id="z1">
 			
 				<img  class="tlineprof" id="briefpicth1" src="">
 				<img class="tlinecover"id="tlinepicth1" src="">
@@ -128,11 +127,10 @@
 			<div class="single">
 				<img class="tlinepic" id="mimic" src="tlinepic/mimic.jpg">
 				<p class="year">
-					66
+					1966
 				</p>
 			</div>	
 			<div class="listholder" id="listholderth2">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser2">
 					
 				<img  class="tlineprof" id="briefpicth2" src="">
 				<img class="tlinecover"id="tlinepicth2" src="">
@@ -154,12 +152,11 @@
 				<div class="single">
 					<img class="tlinepic" id="changeling" src="tlinepic/changeling.jpg">
 					<p class="year">
-					68
+					1968
 					</p>
 				</div>
 			
 			<div class="listholder" id="listholderth3">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser3">
 				<img  class="tlineprof" id="briefpicth3" src="">
 				<img class="tlinecover"id="tlinepicth3" src="">
 				<p class="tlinelister" id="tlinepicth3lister">			
@@ -180,12 +177,12 @@
 			<div class="single">
 				<img class="tlinepic" id="polaris" src="tlinepic/polaris.jpg">
 				<p class="year">
-					69
+					1969
 				</p>
 			</div>
 
 			<div class="listholder" id="listholderth4">
-					<img class="tlinecloser" src="datacloser.png" id="listcloser4">
+	
 						
 					<img  class="tlineprof" id="briefpicth4" src="">
 					<img class="tlinecover"id="tlinepicth4" src="">
@@ -206,11 +203,11 @@
 			<div class="single">
 				<img class="tlinepic" id="havok" src="tlinepic/havok.jpg">
 				<p class="year">
-					70
+					1970
 				</p>
 			</div>
 			<div class="listholder" id="listholderth5">
-					<img class="tlinecloser" src="datacloser.png" id="listcloser5">
+		
 					
 					<img  class="tlineprof" id="briefpicth5" src="">
 					<img class="tlinecover"id="tlinepicth5" src="">
@@ -234,9 +231,12 @@
 	
 				<img class="tlinepic" id="wolverine" src="tlinepic/wolverine.jpg">
 	
-			<img class="tlinepic" id="banshee" src="tlinepic/banshee.jpg">
+				<img class="tlinepic" id="banshee" src="tlinepic/banshee.jpg">
 	
 				<img class="tlinepic" id="storm" src="tlinepic/storm.jpg">
+				<p class="year">
+					1975
+				</p>
 			</div>
 
 			<div class="tlineholder" id="th6b">
@@ -247,12 +247,10 @@
 				<img class="tlinepic" id="thunderbird" src="tlinepic/thunderbird.jpg">
 			</div>	
 
-			<p class="year" id="seven5">
-				75
-			</p>
+			
 		
 			<div class="listholder" id="listholderth6">
-					<img class="tlinecloser" src="datacloser.png" id="listcloser6">
+		
 						
 				<img  class="tlineprof" id="briefpicth6" src="">
 				<img class="tlinecover"id="tlinepicth6" src="">
@@ -276,11 +274,11 @@
 					<img class="tlinepic" id="phoenixforce" src="tlinepic/phoenixforce.jpg">
 
 				<p class="year">
-				79
+				1979
 				</p>
 			</div>
 			<div class="listholder" id="listholderth7">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser7">
+	
 						
 			<img  class="tlineprof" id="briefpicth7" src="">
 				<img class="tlinecover"id="tlinepicth7" src="">
@@ -302,11 +300,11 @@
 				<img class="tlinepic" id="shadowcat" src="tlinepic/shadowcat.jpg">
 	
 			<p class="year">
-					80
+					1980
 				</p>
 		</div>
 			<div class="listholder" id="listholderth8">
-					<img class="tlinecloser" src="datacloser.png" id="listcloser8">
+		
 					
 					<img  class="tlineprof" id="briefpicth8" src="">
 					<img class="tlinecover"id="tlinepicth8" src="">
@@ -331,12 +329,12 @@
 				<img class="tlinepic" id="rogue" src="tlinepic/rogue.jpg">
 
 			<p class="year">
-					83
+					1983
 				</p>
 
 			</div>
 			<div class="listholder" id="listholderth9">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser9">
+	
 					
 				<img  class="tlineprof" id="briefpicth9" src="">
 				<img class="tlinecover"id="tlinepicth9" src="">
@@ -363,11 +361,11 @@
 				<img class="tlinepic" id="magneto" src="tlinepic/magneto.jpg">
 	
 				<p class="year">
-					85
+					1985
 				</p>
 			</div>
 			<div class="listholder" id="listholderth10">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser10">
+	
 				
 				<img  class="tlineprof" id="briefpicth10" src="">
 				<img class="tlinecover"id="tlinepicth10" src="">
@@ -391,11 +389,11 @@
 				<img class="tlinepic" id="longshot" src="tlinepic/longshot.jpg">
 
 				<p class="year">
-					86
+					1986
 			</p>
 			</div>
 			<div class="listholder" id="listholderth11">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser11">
+	
 					
 				<img  class="tlineprof" id="briefpicth11" src="">
 				<img class="tlinecover"id="tlinepicth11" src="">
@@ -423,11 +421,11 @@
 				<img class="tlinepic" id="dazzler" src="tlinepic/dazzler.jpg">
 	
 				<p class="year">
-					87
+					1987
 				</p>
 			</div>
 			<div class="listholder" id="listholderth12">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser12">
+	
 					
 				<img  class="tlineprof" id="briefpicth12" src="">
 				<img class="tlinecover"id="tlinepicth12" src="">
@@ -457,6 +455,9 @@
 				<img class="tlinepic" id="amandasefton" src="tlinepic/amandasefton.jpg">
 	
 				<img class="tlinepic" id="sunder" src="tlinepic/sunder.jpg">
+				<p class="year" id="eight9">
+					1989
+				</p>
 			</div>
 
 			<div class="tlineholder" id="th14">
@@ -479,11 +480,9 @@
 			</div>
 
 
-				<p class="year" id="eight9">
-					89
-				</p>	
+					
 			<div class="listholder" id="listholderth13a">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser13">
+	
 					
 				<img  class="tlineprof" id="briefpicth13a" src="">
 				<img class="tlinecover"id="tlinepicth13a" src="">
@@ -510,11 +509,11 @@
 			<img class="tlinepic" id="gambit" src="tlinepic/gambit.jpg">
 	
 				<p class="year">
-					90
+					1990
 				</p>
 			</div>
 			<div class="listholder" id="listholderth15">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser15">
+	
 					
 				<img  class="tlineprof" id="briefpicth15" src="">
 				<img class="tlinecover"id="tlinepicth15" src="">
@@ -539,12 +538,12 @@
 				<img class="tlinepic" id="bishop" src="tlinepic/bishop.jpg">
 
 				<p class="year">
-				92
+				1992
 				</p>
 
 			</div>
 			<div class="listholder" id="listholderth16">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser16">
+	
 					
 				<img  class="tlineprof" id="briefpicth16" src="">
 				<img class="tlinecover"id="tlinepicth16" src="">
@@ -570,11 +569,11 @@
 				<img class="tlinepic" id="revanche" src="tlinepic/revanche.jpg">
 
 				<p class="year">
-					93
+					1993
 				</p>
 			</div>
 			<div class="listholder" id="listholderth17">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser17">
+	
 					
 				<img  class="tlineprof" id="briefpicth17" src="">
 				<img class="tlinecover"id="tlinepicth17" src="">
@@ -599,11 +598,11 @@
 				<img class="tlinepic" id="cannonball" src="tlinepic/cannonball.jpg">
 
 				<p class="year">
-					95
+					1995
 				</p>
 			</div>
 			<div class="listholder" id="listholderth18">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser18">
+	
 					
 				<img  class="tlineprof" id="briefpicth18" src="">
 				<img class="tlinecover"id="tlinepicth18" src="">
@@ -626,11 +625,11 @@
 				<img class="tlinepic" id="joseph" src="tlinepic/joseph.jpg">
 	
 				<p class="year">
-					96
+					1996
 				</p>
 			</div>
 			<div class="listholder" id="listholderth19">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser19">
+	
 					
 				<img  class="tlineprof" id="briefpicth19" src="">
 				<img class="tlinecover"id="tlinepicth19" src="">
@@ -659,11 +658,11 @@
 				<img class="tlinepic" id="maggott" src="tlinepic/maggott.jpg">
 
 				<p class="year">
-				97
+				1997
 				</p>
 			</div>
 			<div class="listholder" id="listholderth20">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser20">
+	
 					
 				<img  class="tlineprof" id="briefpicth20" src="">
 				<img class="tlinecover"id="tlinepicth20" src="">
@@ -690,11 +689,11 @@
 				<img class="tlinepic" id="cable" src="tlinepic/cable.jpg">
 
 				<p class="year">
-					99
+					1999
 				</p>
 			</div>
 			<div class="listholder" id="listholderth21">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser21">
+	
 					
 				<img  class="tlineprof" id="briefpicth21" src="">
 				<img class="tlinecover"id="tlinepicth21" src="">
@@ -720,11 +719,11 @@
 				<img class="tlinepic" id="moonstar" src="tlinepic/moonstar.jpg">
 	
 				<p class="year">
-					00
+					2000
 				</p>
 			</div>
 			<div class="listholder" id="listholderth22">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser22">
+	
 					
 				<img  class="tlineprof" id="briefpicth22" src="">
 				<img class="tlinecover"id="tlinepicth22" src="">
@@ -752,7 +751,10 @@
 
 				<img class="tlinepic" id="frenzy" src="tlinepic/frenzy.jpg">
 	
-				<img class="tlinepic" id="omerta" src="tlinepic/omerta.jpg">				
+				<img class="tlinepic" id="omerta" src="tlinepic/omerta.jpg">
+				<p class="year" id="zero1">
+					2001
+				</p>				
 			</div>
 
 			<div class="tlineholder" id="th23b">
@@ -773,11 +775,9 @@
 			</div>
 
 
-				<p class="year" id="zero1">
-					01
-				</p>	
+					
 			<div class="listholder" id="listholderth23">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser23">
+	
 					
 				<img  class="tlineprof" id="briefpicth23" src="">
 				<img class="tlinecover"id="tlinepicth23" src="">
@@ -804,11 +804,11 @@
 				<img class="tlinepic" id="slipstream" src="tlinepic/slipstream.jpg">
 
 				<p class="year">
-					02
+					2002
 				</p>
 			</div>
 			<div class="listholder" id="listholderth24">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser24">
+	
 					
 				<img  class="tlineprof" id="briefpicth24" src="">
 				<img class="tlinecover"id="tlinepicth24" src="">
@@ -832,11 +832,11 @@
 				<img class="tlinepic" id="juggernaut" src="	tlinepic/juggernaut.jpg">
 
 				<p class="year">
-					03
+					2003
 				</p>
 			</div>
 			<div class="listholder" id="listholderth25">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser25">
+	
 					
 				<img  class="tlineprof" id="briefpicth25" src="">
 				<img class="tlinecover"id="tlinepicth25" src="">
@@ -863,7 +863,9 @@
 					<img class="tlinepic" id="beak" src="tlinepic/beak.jpg">
 
 					<img class="tlinepic" id="dust" src="tlinepic/dust.jpg">
-
+					<p class="year" id="zero4">
+						2004
+					</p>
 				
 			</div>
 
@@ -876,11 +878,9 @@
 				
 			</div>
 
-					<p class="year" id="zero4">
-						04
-					</p>
+					
 			<div class="listholder" id="listholderth26">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser26">
+	
 					
 				<img  class="tlineprof" id="briefpicth26" src="">
 				<img class="tlinecover"id="tlinepicth26" src="">
@@ -903,11 +903,11 @@
 				<img class="tlinepic" id="mystique" src="tlinepic/mystique.jpg">
 
 				<p class="year">
-					05
+					2005
 				</p>
 			</div>
 			<div class="listholder" id="listholderth27">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser27">
+	
 					
 				<img  class="tlineprof" id="briefpicth27" src="">
 				<img class="tlinecover"id="tlinepicth27" src="">
@@ -935,7 +935,9 @@
 					<img class="tlinepic" id="petra" src="tlinepic/petra.jpg">
 			
 					<img class="tlinepic" id="sway" src="tlinepic/sway.jpg">
-
+					<p class="year" id="zero6">
+						2006
+					</p>
 				
 			</div>
 
@@ -950,11 +952,9 @@
 				<img class="tlinepic" id="sabretooth" src="tlinepic/sabretooth.jpg">
 			</div>
 
-			<p class="year" id="zero6">
-				06
-			</p>
+			
 			<div class="listholder" id="listholderth28">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser28">
+	
 					
 				<img  class="tlineprof" id="briefpicth28" src="">
 				<img class="tlinecover"id="tlinepicth28" src="">
@@ -979,11 +979,11 @@
 				<img class="tlinepic" id="hepzibah" src="tlinepic/hepzibah.jpg">
 
 				<p class="year">
-					07
+					2007
 				</p>
 			</div>
 			<div class="listholder" id="listholderth29">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser29">
+	
 						
 				<img  class="tlineprof" id="briefpicth29" src="">
 				<img class="tlinecover"id="tlinepicth29" src="">
@@ -1010,7 +1010,9 @@
 				<img class="tlinepic" id="sunspot" src="tlinepic/sunspot.jpg">
 
 				<img class="tlinepic" id="aurora" src="tlinepic/aurora.jpg">
-
+				<p class="year" id="zero8">
+					2008
+				</p>
 				
 			</div>
 
@@ -1019,11 +1021,9 @@
 				<img class="tlinepic" id="magma" src="tlinepic/magma.jpg">
 			</div>
 					
-			<p class="year" id="zero8">
-				08
-			</p>
+			
 			<div class="listholder" id="listholderth30">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser30">
+	
 					
 				<img  class="tlineprof" id="briefpicth30" src="">
 				<img class="tlinecover"id="tlinepicth30" src="">
@@ -1050,7 +1050,9 @@
 				<img class="tlinepic" id="magik" src="tlinepic/magik.jpg">
 
 				<img class="tlinepic" id="namor" src="tlinepic/namor.jpg">
-
+				<p class="year" id="zero9">
+					2009
+				</p>
 				
 			</div>
 					
@@ -1069,11 +1071,9 @@
 				<img class="tlinepic" id="dagger" src="tlinepic/dagger.jpg">
 			</div>				
 
-			<p class="year" id="zero9">
-				09
-			</p>
+			
 			<div class="listholder" id="listholderth31">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser31">
+	
 					
 				<img  class="tlineprof" id="briefpicth31" src="">
 				<img class="tlinecover"id="tlinepicth31" src="">
@@ -1098,11 +1098,11 @@
 				<img class="tlinepic" id="hopesummers" src="tlinepic/hopesummers.jpg">
 
 				<p class="year">
-							10
+							2010
 				</p>
 			</div>
 			<div class="listholder" id="listholderth32">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser32">
+	
 					
 				<img  class="tlineprof" id="briefpicth32" src="">
 				<img class="tlinecover"id="tlinepicth32" src="">
@@ -1126,11 +1126,11 @@
 				<img class="tlinepic" id="doop" src="tlinepic/doop.jpg">
 
 				<p class="year">
-					11
+					2011
 				</p>
 			</div>
 			<div class="listholder" id="listholderth33">
-			<img class="tlinecloser" src="datacloser.png" id="listcloser33">
+
 					
 				<img  class="tlineprof" id="briefpicth33" src="">
 				<img class="tlinecover"id="tlinepicth33" src="">
@@ -1157,11 +1157,11 @@
 				<img class="tlinepic" id="warbird" src="tlinepic/warbird.jpg">
 
 				<p class="year">
-					12
+					2012
 				</p>
 			</div>
 			<div class="listholder" id="listholderth34">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser34">
+			
 					
 				<img  class="tlineprof" id="briefpicth34" src="">
 				<img class="tlinecover"id="tlinepicth34" src="">
@@ -1190,6 +1190,9 @@
 				<img class="tlinepic" id="iceman2" src="tlinepic/iceman.jpg">
 
 				<img class="tlinepic" id="angel2" src="tlinepic/angel.jpg">
+				<p class="year">
+					2013
+				</p>
 			</div>
 
 			<div class="tlineholder" id="th35b">
@@ -1198,11 +1201,9 @@
 				<img class="tlinepic" id="marvelgirl2" src="tlinepic/marvelgirl.jpg">
 			</div>
 
-			<p class="year" id="one3">
-				13
-			</p>
+			
 			<div class="listholder" id="listholderth35">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser35">
+				
 					
 				<img  class="tlineprof" id="briefpicth35" src="">
 				<img class="tlinecover"id="tlinepicth35" src="">
@@ -1230,11 +1231,10 @@
 				<img class="tlinepic" id="forgetmenot" src="tlinepic/forgetmenot.jpg">
 
 				<p class="year">
-					14
+					2014
 				</p>
 			</div>
 			<div class="listholder" id="listholderth36">
-				<img class="tlinecloser" src="datacloser.png" id="listcloser3690">
 					
 				<img  class="tlineprof" id="briefpicth36" src="">
 				<img class="tlinecover"id="tlinepicth36" src="">
@@ -1244,8 +1244,8 @@
 		</div>
 	</div>	
 
-			
-
+</div>			
+</div>
 	
 
 
