@@ -23,14 +23,16 @@ var charnames2 = [
 function namer()
 	{	
 		var x = $("#charnames").val().toLowerCase();
+		$("#expos").css("display","none")
+		$("#charnames").val("");
 		// var x = document.getElementById("charnames").value;
 		$("#mainholder").css("margin-left","2%");
-		$("#datacontain").fadeOut(2000);
-	 	$("#info").animate({height: "0px",width: "0px"},200);
+		$("#datacontain").css("display","none");
+	 	$("#info").css("height", "0px","width", "0px");
 	 	$("#info2").css("top","0px");
-	 	$("#firstapp").animate({height: "0",width:"0px"},200);
+	 	$("#firstapp").css("height", "0px","width","0px");
 		$("#xlogo").attr("src","placeholder.png");
-		$("#pic").animate({height: "300px",width: "300px"},200);
+		$("#pic").css("height", "300px","width", "300px");
 		$("#marquee").animate({ marginTop: "303px",marginLeft: "60px"},200);
 
 //  below only happens if the name is correct. therefore the place holder image hidden by the x logo is always saying ERROR. BUT if it's 
@@ -44,44 +46,32 @@ function namer()
      for (var t = 0; t <= charnames.length; t++)
      for (var v = 0; v <= charnames2.length; v++)	
 
-	 if (charnames2[v] === x)
+	 if (x === charnames2[v])
 	 	{ 
-	 		$("#error").css("display","block");
 	 		$("#xlogo").attr("src","profilepic/"+charnames[v]+".png");
 	 		$("#cover").attr("src","covers/"+charnames[v]+".jpg");
-	 		$("#info2").css("right","0px","top", "0px");
-	 		
-	 		$("#datacontain").fadeIn(2000);
-	 		$("#error").css("display","none");
-	 		$("#info").animate({height: "504px",width: "400px"},200);
-	 		$("#firstapp").animate({height: "504px",width:"400px"},200);
+	 		$("#info2").css("right","0px","top", "0px");	 	
+	 		$("#datacontain").css("display","block");
+	 		$("#info").css("height","504px","width","400px");
+	 		$("#firstapp").css("height","504px","width","400px");
 	 		$("#info2").load("info/"+charnames[v] +".txt");
 	 		$("#info2").draggable({ axis: "y" });
 	 		$("#info2").css("left","0px","top", "0px");	
 	 		
 	 		
 	 	}
-	 else if (charnames[t] === x)
+	 else if (x === charnames[t])
 	 	{
-	 		$("#error").css("display","block");
 	 		$("#xlogo").attr("src", "profilepic/"+charnames[t]+".png");
 	 		$("#cover").attr("src","covers/"+charnames[t]+".jpg");
-	 		$("#info2").css("right","0px","top", "0px");
-	 		
-	 		$("#datacontain").fadeIn(2000);
-	 		$("#error").css("display","none");
-	 		$("#info").animate({height: "504px",width: "400px"},200);
-	 		$("#firstapp").animate({height: "504px",width:"400px"},200);
+	 		$("#info2").css("right","0px","top", "0px");	 		
+	 		$("#datacontain").css("display","block");
+	 		$("#info").css("height","504px","width","400px");
+	 		$("#firstapp").css("height","504px","width","400px");
 	 		$("#info2").load( "info/"+charnames[t] +".txt");
 	 		$("#info2").draggable({ axis: "y" });	 		
 	 		$("#info2").css("left","0px","top", "0px");
 	 	}
-	 	else
-	 	{
-	 		console.log("dude")
-	 	}	
-	 	
-	 $("#charnames").val("");
 
 		};
 
@@ -99,17 +89,17 @@ function namer()
        if (parwid === 202)
        {
        $("#"+z).parent().parent().animate({width: "535px"},1000);
-       $("#"+z).parent().parent().parent().animate({width: "587px"},1000);
+       $("#"+z).parent().parent().parent().animate({width: "589px"},1000);
        }
        else if (parwid === 100)
        {
        $("#"+z).parent().parent().animate({width: "433px"},1000);
-       $("#"+z).parent().parent().parent().animate({width: "463px"},1000);
+       $("#"+z).parent().parent().parent().animate({width: "465px"},1000);
        }
        else if (parwid === 305)
        {
        	$("#"+z).parent().parent().animate({width: "637px"},1000);
-       	$("#"+z).parent().parent().parent().animate({width: "727px"},1000);
+       	$("#"+z).parent().parent().parent().animate({width: "702px"},1000);
        };
 	
 		$("#"+y+par+"lister").load( "brief/"+z+".txt");
@@ -133,17 +123,17 @@ function namer()
        		if (parwid === 535)
        {
        $("#"+z1).parent().parent().animate({width: "202px"},1000);
-       $("#"+z1).parent().parent().parent().animate({width: "254px"},1000);
+       $("#"+z1).parent().parent().parent().animate({width: "261px"},1000);
        }
        else if (parwid === 433)
        {
        $("#"+z1).parent().parent().animate({width: "100px"},1000);
-       $("#"+z1).parent().parent().parent().animate({width: "130px"},1000);
+       $("#"+z1).parent().parent().parent().animate({width: "137px"},1000);
        }
        else if (parwid === 637)
        {
        	$("#"+z1).parent().parent().animate({width: "305px"},1000);
-       	$("#"+z1).parent().parent().parent().animate({width: "370px"},1000);
+       	$("#"+z1).parent().parent().parent().animate({width: "377px"},1000);
        };
 
 		});
@@ -159,13 +149,14 @@ function namer()
 // Create reset button
 
 function modalreset()
-	{
+	{	
 		$("#xlogo").attr("src","xlogo.png");
 		$("#datacontain").fadeOut(200);
 	 	$("#firstapp").animate({height: "0",width:"0px"},200);
 	 	$("#mainholder").css("margin-left","40%");
 	 	$("#xlogo").animate({height: "50px",width: "50px"},10).fadeIn(100).animate({height: "200px",width: "200px"},200);
 	 	$("#marquee").animate({ marginTop: "206px",marginLeft: "21px"},100);
+		$("#expos").css("display","inline-block")
 	};
 
 
@@ -194,23 +185,6 @@ $("#dbasebutt").click(function()
 	$("#bod").css("overflow","hidden");
 
 });
-
-
-function validator()
-{ 
-	for (var o = 0; o <= charnames.length; o++)
-     for (var q = 0;q <= charnames2.length; q++)
-var d = $("#charnames").val().toLowerCase();
-if(charnames2[q] === d)
-{
-	alert("t");
-}
-else if(charnames[o] === d)
-{
-	alert("fdf");
-};
-	 $("#charnames").val("");
-};
 
 
 $("#top").click(function()
