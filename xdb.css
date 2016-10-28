@@ -85,15 +85,19 @@ table {
 @font-face {font-family: watt;
 			src: url(squarethin.ttf);}		
 
-#bod {background-color: rgb(180, 180, 180);
+a {text-decoration: none;
+	color:rgb(130, 130, 130);
+	font-style: italic;}
+
+#bod {background-color: rgb(220,220,220);
 	  overflow:hidden;}
 
-#dbholder { background-color: rgb(180, 180, 180);
+#dbholder { background-color: rgb(220,220,220);
 			height: 900px;
 			overflow: hidden}
 
 #mainholder{margin-left: 40%;
-	    	margin-top: 88px;
+	    	margin-top: 35px;
    			width: 201px;
 		    float:left;
 		    -webkit-transition: margin-left 1s; /* Safari 3.1 to 6.0 */
@@ -118,16 +122,22 @@ table {
 		width:200px;
 		z-index:4;}*/
 
-#maintitle{ width: 200px;
-    		margin-left: 15px;
+#maintitle{ width: 210px;
+    		margin-left: 0px;
 			font-family: abs;
-			font-size: 92px;
-			color:white;}
+			font-size: 52px;
+			color:rgb(130, 130, 130);}
 
-#subtitle{margin-left:29px;
-	font-family: fsans;
-			font-size: 13px;
-			color:white;}
+#subtitle{font-family: abs;
+font-size: 24px;
+color:rgb(130, 130, 130);
+margin-left: 8px;}
+
+#expos {font-size: 18px;
+color:rgb(130, 130, 130);
+font-family: roboto;
+text-align: center;
+}			
 #dbasebutthold{display: none;}
 
 #dbasebutt{cursor:pointer;}
@@ -145,11 +155,11 @@ table {
 .icon {height:50px;
 		width:50px;}		
 
-#ui{margin-top: 20px;
-		height:300px;
-		width:300px;
-		display: inline-block;
-		margin-left: 40px;
+#ui{ margin-top: 10px;
+height: 300px;
+width: 291px;
+display: inline-block;
+margin-left: -49px;
 	}
 #error {color:yellow;
 		display:none;}
@@ -158,29 +168,31 @@ table {
     height: 20px;
     font-size: 18px;
     padding: 3px;
-    color:white;
+    color:red;
     font-family: roboto;
     background-color: rgb(158,158,158);
     border: 0px;
-    border-radius: 5px;}
+    border-radius: 5px;
+	margin-top: 12px;
+margin-left: 40px;
+	text-align:center;}
 
 #pushbutt {height: 24px;
     width: 30px;
     margin-left: 6px;
 	display:none;}
 
-#datacontain {/*margin-top: 50px;*/
-		display:none;/*
-		margin-left: 400px;*/
-		background-color:white;
+#datacontain {
+		display:none;
 		padding:10px;
 		overflow:hidden;
 		float:left;
 		margin-left: 8%;
-margin-top: 4%;
+margin-top: 2%;
 	border-radius: 15px;	
 	height:534px;
 	width: 760px;
+	border:1px solid rgb(130, 130, 130);
 }
 
 #info { position: absolute;
@@ -193,11 +205,10 @@ margin-top: 4%;
 #info2{cursor: pointer;
 	top:0px;
 	left:0px;
-	background-color:white;
 	margin-left: 5px;
 	position: relative
 	left:0;
-	color:rgb(158,158,158);
+	color:rgb(95, 95, 95);
 
 }
 
@@ -232,8 +243,38 @@ width: 20px;
 margin-left: 367px;}
 
 #transit {height:2000px;
-	background-color: rgb(180, 180, 180);}
+	background-color: rgb(220,220,220);}
 
+#tlineexpos {
+    height: 284px;
+    width: 195px;
+    display: inline-block;
+    float: left;
+	margin-left: 10px;
+    margin-top: 20px;
+	padding:3px;
+	margin-right: 10px
+	}
+
+#subtitle2{font-family: abs;
+font-size: 35px;
+color:rgb(130, 130, 130);
+margin-left: 8px;
+margin-top: 10px}
+
+#xlogo2 {
+		height: 150px;
+		width: 150px;
+		margin-left: 23px;
+		}
+
+#expos2 {
+	font-size: 15px;
+color:rgb(130, 130, 130);
+font-family: roboto;
+text-align: center;	
+margin-top:5px 	
+		}		
 
 #tpicinfo {height:0px;
     width: 0px;
@@ -246,11 +287,11 @@ margin-left: 367px;}
 .single{height:290px;
 		width:100px;
 		display:inline-block;
-		background-color: white;
 		margin-left: 0px;
 		float:left;
 		border-radius: 4px;
 		overflow: hidden;
+		padding-top: 7px;
 }
 .tlinecloser{cursor: pointer;
 position: absolute;
@@ -268,7 +309,8 @@ margin-left: -17px;width: 21px;}
 			margin-top: 20px;
 			border-radius: 4px;
 			overflow: hidden;
-			width:254px;}
+			width:261px;
+			border:1px solid rgb(130, 130, 130);}
 
 .tlineholder0a{
 			display:inline-block;
@@ -277,7 +319,8 @@ margin-left: -17px;width: 21px;}
 			margin-top: 20px;
 			border-radius: 4px;
 			overflow: hidden;
-			width:130px;}		
+			width:137px;
+			border:1px solid rgb(130, 130, 130);}		
 
 .tlineholder0b{
 			display:inline-block;
@@ -286,9 +329,10 @@ margin-left: -17px;width: 21px;}
 			margin-top: 20px;
 			border-radius: 4px;
 			overflow: hidden;
-			width:370px;}					
+			width:377px;
+			border:1px solid rgb(130, 130, 130);}					
 
-.tlineholder{background-color: white;
+.tlineholder{
 			height:290px;
 			width:100px;
 			display:inline-block;
@@ -297,7 +341,7 @@ margin-left: -17px;width: 21px;}
 			border-radius: 4px;
 			overflow: hidden}
 
-.tlineholder2{background-color: white;
+.tlineholder2{
 			height:290px;
 			width:100px;
 			display:inline-block;
@@ -306,7 +350,7 @@ margin-left: -17px;width: 21px;}
 			border-radius: 4px;
 			overflow: hidden}	
 
-.tlineholder3{background-color: white;
+.tlineholder3{
 			height:290px;
 			width:100px;
 			display:inline-block;
@@ -319,95 +363,129 @@ margin-left: -17px;width: 21px;}
 #th1{ 
 		width:202px;}
 #th1a {margin-top: 0px;
-		margin-left:0px;}
+		margin-left:0px;
+	border:0px;
+padding-top: 7px;}
 #th1b {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		border:0px;
+	padding-top: 7px;}
 #six3 { position: absolute;
     	margin-top: 213px;
-	    margin-left: 80px;}
+	    margin-left: 80px;
+	padding-top: 6px;}
 
 #th6{ 	width:202px;}
 #th6a {margin-top: 0px;
-		margin-left:0px;}
+		margin-left:0px;
+	padding-top: 6px;}
 #th6b {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+	padding-top: 7px;}
 #seven5 { position: absolute;
     	margin-top: 213px;
-	    margin-left: 80px;}
+	    margin-left: 80px;
+	    padding-top: 6px;}
 
 #th13a { width: 305px;}
 #th13 {margin-top: 0px;
-		margin-left: 0px;}
+		margin-left: 0px;
+	padding-top: 7px;}
 #th14 {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		padding-top: 7px;}
 #th14a {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		padding-top: 7px;}
 #eight9 { position: absolute;
     	    margin-top: 213px;
-    		margin-left: 124px;}
+    		margin-left: 124px;
+    		padding-top: 6px;}
 
 #th26 {
 		width:202px;}
 #th26a {margin-top: 0px;
-		margin-left:0px;}
+		margin-left:0px;
+		padding-top: 7px;}
 #th26b {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		padding-top: 7px;}
 #zero4 { position: absolute;
     	margin-top: 213px;
-	    margin-left: 80px;}    		
+	    margin-left: 80px;
+		padding-top: 6px;}    		
 
 #th23 { width: 305px;}
 #th23a{margin-top: 0px;
-		margin-left: 0px;}
+		margin-left: 0px;
+		padding-top: 7px;}
 #th23b {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		padding-top: 7px;}
 #th23c {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		padding-top: 7px;}
 #zero1 { position: absolute;
     	    margin-top: 213px;
-    		margin-left: 124px;}
+    		margin-left: 124px;
+    		padding-top: 6px;}
 
 #th28 { width: 202px;}
 #th28a{margin-top: 0px;
-		margin-left: 0px;}
+		margin-left: 0px;
+		padding-top: 7px;}
 #th28b {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		padding-top: 7px;}
 #th28c {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		padding-top: 7px;}
 #zero6 { position: absolute;
     	    margin-top: 213px;
-    		margin-left: 80px;}   
+    		margin-left: 80px;
+    		padding-top: 6px;}   
 
 #th30 { width: 202px;}
 #th30a{margin-top: 0px;
-		margin-left: 0px;}
+		margin-left: 0px;
+		padding-top: 7px;}
 #th30b {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		padding-top: 7px;}
 #th30c {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		padding-top: 7px;}
 #zero8 { position: absolute;
     	    margin-top: 213px;
-    		margin-left: 80px;}    
+    		margin-left: 80px;
+    		padding-top: 6px;}    
 
 #th31 { width: 305px;}
 #th31a{margin-top: 0px;
-		margin-left: 0px;}
+		margin-left: 0px;
+		padding-top: 7px;}
 #th31b {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		padding-top: 7px;}
 #th31c {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		padding-top: 7px;}
 #zero9 { position: absolute;
     	    margin-top: 213px;
-    		margin-left: 124px;} 	
+    		margin-left: 124px;
+    		padding-top: 6px;} 	
 
 #th35{width:202px;}
 #th35a {margin-top: 0px;
-		margin-left:0px;}
+		margin-left:0px;
+		padding-top: 7px;}
 #th35b {margin-top: 0px;	
-		margin-left: 2px;}
+		margin-left: 2px;
+		padding-top: 7px;}
 #one3 { position: absolute;
     	margin-top: 213px;
-	    margin-left: 80px;}	
+	    margin-left: 80px;
+		padding-top: 6px;}	
 
 /*.tlinepic63 {	height:50px;
 			width:100px;
@@ -425,12 +503,11 @@ margin-left: -17px;width: 21px;}
 
 
 
-.year { color:rgb(180,180,180);
+.year { color:rgb(130, 130, 130);
 		font-family:bn;
 		font-size: 74px;
 margin-left: 20px;
-position: absolute;
-background-color: white}
+position: absolute;}
 
 .tlinecover{    margin-top: 6px;
     margin-left: 3px;
@@ -473,7 +550,7 @@ height:202px;}
 #tlinepicth35{display:none;}
 #tlinepicth36{display:none;}
 
-.listholder {background-color: white;
+.listholder {
 display: none;
 float: left;
 width: 313px;
@@ -483,8 +560,8 @@ margin-left: 20px;}
     font-family: roboto;
     margin-top: 3px;
     margin-left: 7px;
-    color: #FFF;
-    background-color:rgb(158,158,158);
+    color:rgb(95, 95, 95);
+/*    background-color:rgb(158,158,158);*/
     padding: 2px;
 }
 
@@ -492,40 +569,40 @@ margin-left: 20px;}
 width:165px;
 margin-left: 7px;}		
 
-#beast { margin-top: 106px}
-#mimic {margin-top: 160px}
-#changeling {margin-top: 160px}
-#polaris {margin-top: 160px}
-#havok {margin-top: 160px}
-#sunfire {margin-top: 53px}
-#phoenixforce {margin-top: 160px}
-#shadowcat {margin-top: 160px}
-#lockheed {margin-top: 106px}
-#rachelsummers {margin-top: 106px}
-#longshot {margin-top: 160px}
-#psylocke {margin-top: 106px}
-#multipleman {margin-top:106px;}
-#jubilee {margin-top: 106px}
-#bishop {margin-top: 160px}
-#revanche {margin-top: 160px}
-#cannonball {margin-top: 160px}
-#joseph {margin-top: 160px}
-#ceciliareyes {margin-top: 53px}
-#skrull{margin-top: 106px}
-#nealshaara {margin-top: 106px}
-#chamber {margin-top: 160px}
-#stacyx {margin-top: 53px}
-#husk {margin-top: 106px}
-#stepfordcuckoos { margin-top: 106px}
-#mystique {margin-top: 160px}
-#armor {margin-top: 106px}
-#magma{margin-top: 159px}
-#dagger {margin-top: 160px}
-#x23 {margin-top: 106px}
-#doop {margin-top: 160px}
-#krakoa {margin-top: 106px}
-#marvelgirl2 {margin-top: 160px}
-#firestar{margin-top:53px;}
+#beast { margin-top: 104px}
+#mimic {margin-top: 157px}
+#changeling {margin-top: 157px}
+#polaris {margin-top: 157px}
+#havok {margin-top: 157px}
+#sunfire {margin-top: 51px}
+#phoenixforce {margin-top: 157px}
+#shadowcat {margin-top: 157px}
+#lockheed {margin-top: 104px}
+#rachelsummers {margin-top: 104px}
+#longshot {margin-top: 157px}
+#psylocke {margin-top: 104px}
+#multipleman {margin-top:104px;}
+#jubilee {margin-top: 104px}
+#bishop {margin-top: 157px}
+#revanche {margin-top: 157px}
+#cannonball {margin-top: 157px}
+#joseph {margin-top: 157px}
+#ceciliareyes {margin-top: 52px}
+#skrull{margin-top: 104px}
+#nealshaara {margin-top: 104px}
+#chamber {margin-top: 157px}
+#stacyx {margin-top: 51px}
+#husk {margin-top: 104px}
+#stepfordcuckoos { margin-top: 105px}
+#mystique {margin-top: 157px}
+#armor {margin-top: 104px}
+#magma{margin-top: 157px}
+#dagger {margin-top: 157px}
+#x23 {margin-top: 104px}
+#doop {margin-top: 157px}
+#krakoa {margin-top: 104px}
+#marvelgirl2 {margin-top: 157px}
+#firestar{margin-top:51px;}
 
 .nametag{ 
 			height:290px;
@@ -563,50 +640,57 @@ margin-left: 7px;}
 float: left;
 display: inline-block;
 text-align: left;
-color: #FFF;
+color:rgb(130, 130, 130);
 font-family: bn;
 letter-spacing: 2px;
 font-size: 16px;
 width: 328px;
-margin-top: 117px;
+margin-top: 111px;
 margin-left: -150px;}
 
 
 
-#profx{    margin-top: 126px;
+#profx{    margin-top: 123px;
     margin-right: -134px;
     margin-bottom: 116px;
     margin-left: -118px;
 width: 291px;}
 
 
-#ncrawl{ margin: 130px -134px 116px -118px;
+#ncrawl{ margin: 124px -134px 116px -118px;
 width: 291px;
 font-size: 13px;}
 
 
-#sund{    margin-top: 121px;
+#sund{    margin-top: 118px;
     margin-right: -134px;
     margin-bottom: 116px;
     margin-left: -112px;
 font-size: 14px;
 width: 292px;}  
 
-#xrn{    margin: 118px -134px 116px -114px;
+#xrn{    margin: 115px -134px 116px -114px;
 font-size: 16px;
 width: 292px;} 
 
-#dst{    margin: 153px -134px 116px -92px;
+#dst{    margin: 149px -134px 116px -92px;
 width: 240px;}
 
-#sbtoot{   margin: 139px -134px 116px -107px;
+#sbtoot{   margin: 135px -134px 116px -107px;
 width: 259px;
 font-size: 14px;}
 
-#aur{    margin: 133px -134px 116px -111px;
+#aur{    margin: 130px -134px 116px -111px;
 width: 279px;}
 
-#profx2{ margin: 144px -134px 116px -103px;
+#sund2{    margin-top: 117px;
+    margin-right: -134px;
+    margin-bottom: 116px;
+    margin-left: -112px;
+font-size: 14px;
+width: 292px;}  
+
+#profx2{ margin: 138px -134px 116px -103px;
 width: 261px;}
 
 
