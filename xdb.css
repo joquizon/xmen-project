@@ -277,7 +277,16 @@ margin-left: -17px;width: 21px;}
 			margin-top: 20px;
 			border-radius: 4px;
 			overflow: hidden;
-			width:130px;}			
+			width:130px;}		
+
+.tlineholder0b{
+			display:inline-block;
+			float:left;
+			margin-left: 10px;
+			margin-top: 20px;
+			border-radius: 4px;
+			overflow: hidden;
+			width:370px;}					
 
 .tlineholder{background-color: white;
 			height:290px;
@@ -519,26 +528,33 @@ margin-left: 7px;}
 #firestar{margin-top:53px;}
 
 .nametag{ 
-    background-color: blue;
 			height:290px;
 			width:42px;
 			display:inline-block;
 			float:left;
-			margin-left: 0px;
-			
+			margin-left: 0px;		
 			border-radius: 4px;
 			overflow: hidden;
 }
 
 .nametag2{ 
-    background-color: blue;
 			height:290px;
 			width:20px;
 			display:inline-block;
 			float:left;
-
 			border-radius: 4px;
 			overflow: hidden;}
+
+.nametag3{ 
+			height:290px;
+			width:54px;
+			display:inline-block;
+			float:left;
+			margin-left: 0px;
+		
+			border-radius: 4px;
+			overflow: hidden;
+}			
 
 .namelister{-ms-transform: rotate(-90deg); /* IE 9 */
     -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
@@ -550,45 +566,49 @@ text-align: left;
 color: #FFF;
 font-family: bn;
 letter-spacing: 2px;
-font-size: 16px}
+font-size: 16px;
+width: 328px;
+margin-top: 117px;
+margin-left: -150px;}
 
 
 
-#profx{margin-left: -119px;
-margin-top: 124px;
-margin-right: -134px;
-margin-bottom: 116px;}
+#profx{    margin-top: 126px;
+    margin-right: -134px;
+    margin-bottom: 116px;
+    margin-left: -118px;
+width: 291px;}
 
-#mimics{margin-top: 261px;
-    margin-left: -5px;}
 
-#change{
-    margin-top: 241px;
-margin-left: -26px;}
-
-#polars{
-    margin-top: 255px;
-margin-left: -12px;}
-
-#havk{margin-top: 260px;
-margin-left: -6px;}
-
-#ncrawl{    margin-top: 124px;
-    margin-right: -141px;
-    margin-bottom: 135px;
-    margin-left: -122px;
+#ncrawl{ margin: 130px -134px 116px -118px;
+width: 291px;
 font-size: 13px;}
 
-#phenx{margin-top: 245px;
-margin-left: -6px;}
 
-#shadcat{margin-top: 242px;
-margin-left: -25px;}
+#sund{    margin-top: 121px;
+    margin-right: -134px;
+    margin-bottom: 116px;
+    margin-left: -112px;
+font-size: 14px;
+width: 292px;}  
+
+#xrn{    margin: 118px -134px 116px -114px;
+font-size: 16px;
+width: 292px;} 
+
+#dst{    margin: 153px -134px 116px -92px;
+width: 240px;}
+
+#sbtoot{   margin: 139px -134px 116px -107px;
+width: 259px;
+font-size: 14px;}
+
+#aur{    margin: 133px -134px 116px -111px;
+width: 279px;}
+
+#profx2{ margin: 144px -134px 116px -103px;
+width: 261px;}
 
 
-
-#rog{margin-top: 219px;
-margin-left: -48px;
-width: 125px;}
 
 /*turn namelister into id's and common traits into classes set positioning rules turn off the nametag blue/
