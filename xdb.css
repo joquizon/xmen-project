@@ -120,8 +120,6 @@ a {text-decoration: none;
     margin-top: 0%;}   
 
 #timelinecontainer {
-    margin-top: 305px;
-    width: 30000px;
 }
 
 #mainholder{margin-left: 40%;
@@ -251,8 +249,7 @@ margin-top: 2%;
 #logholder{height:200px;
 			width: 200px;
 			border-radius: 100px;
-    overflow: hidden;
-	margin-bottom: 20px}
+    overflow: hidden;}
 
 #firstapp {	
 		    height: 0px;
@@ -288,20 +285,22 @@ margin-left: 367px;}
 display: none;}
 
 #tlineexpos {
-    position: fixed;
     height: 284px;
     width: 301px;
-    margin-left: 35%;
-    margin-top: 2%;
-    padding: 3px;
-    margin-right: 10px;
-}
+    display: inline-block;
+    float: left;
+	margin-left: 10px;
+    margin-top: 0px;
+	padding:3px;
+	margin-right: 10px
+	}
 
 #subtitle2 {
     font-family: abs;
     font-size: 35px;
     color: rgb(130, 130, 130);
-    
+    margin-left: 64px;
+    margin-top: 0px;
 }
 
 #xlogo2 {
@@ -412,7 +411,10 @@ padding-top: 7px;}
 		margin-left: 2px;
 		border:0px;
 	padding-top: 7px;}
-
+#six3 { position: absolute;
+    	margin-top: 213px;
+	    margin-left: 80px;
+	padding-top: 6px;}
 
 #th6{ 	width:202px;}
 #th6a {margin-top: 0px;
@@ -436,7 +438,10 @@ padding-top: 7px;}
 #th14a {margin-top: 0px;	
 		margin-left: 2px;
 		padding-top: 7px;}
-
+#eight9 { position: absolute;
+    	    margin-top: 213px;
+    		margin-left: 124px;
+    		padding-top: 6px;}
 
 #th26 {
 		width:202px;}
@@ -446,7 +451,10 @@ padding-top: 7px;}
 #th26b {margin-top: 0px;	
 		margin-left: 2px;
 		padding-top: 7px;}
-   		
+#zero4 { position: absolute;
+    	margin-top: 213px;
+	    margin-left: 80px;
+		padding-top: 6px;}    		
 
 #th23 { width: 305px;}
 #th23a{margin-top: 0px;
@@ -458,7 +466,10 @@ padding-top: 7px;}
 #th23c {margin-top: 0px;	
 		margin-left: 2px;
 		padding-top: 7px;}
-
+#zero1 { position: absolute;
+    	    margin-top: 213px;
+    		margin-left: 124px;
+    		padding-top: 6px;}
 
 #th28 { width: 202px;}
 #th28a{margin-top: 0px;
@@ -470,7 +481,10 @@ padding-top: 7px;}
 #th28c {margin-top: 0px;	
 		margin-left: 2px;
 		padding-top: 7px;}
-  
+#zero6 { position: absolute;
+    	    margin-top: 213px;
+    		margin-left: 80px;
+    		padding-top: 6px;}   
 
 #th30 { width: 202px;}
 #th30a{margin-top: 0px;
@@ -482,7 +496,10 @@ padding-top: 7px;}
 #th30c {margin-top: 0px;	
 		margin-left: 2px;
 		padding-top: 7px;}
-   
+#zero8 { position: absolute;
+    	    margin-top: 213px;
+    		margin-left: 80px;
+    		padding-top: 6px;}    
 
 #th31 { width: 305px;}
 #th31a{margin-top: 0px;
@@ -494,7 +511,10 @@ padding-top: 7px;}
 #th31c {margin-top: 0px;	
 		margin-left: 2px;
 		padding-top: 7px;}
- 	
+#zero9 { position: absolute;
+    	    margin-top: 213px;
+    		margin-left: 124px;
+    		padding-top: 6px;} 	
 
 #th35{width:202px;}
 #th35a {margin-top: 0px;
@@ -503,7 +523,10 @@ padding-top: 7px;}
 #th35b {margin-top: 0px;	
 		margin-left: 2px;
 		padding-top: 7px;}
-
+#one3 { position: absolute;
+    	margin-top: 213px;
+	    margin-left: 80px;
+		padding-top: 6px;}	
 
 /*.tlinepic63 {	height:50px;
 			width:100px;
@@ -521,11 +544,11 @@ padding-top: 7px;}
 
 
 
-.year {
-    color: rgb(130, 130, 130);
-    font-family: bn;
-    font-size: 61px;
-    margin-top: 7px;}
+.year { color:rgb(130, 130, 130);
+		font-family:bn;
+		font-size: 74px;
+margin-left: 20px;
+position: absolute;}
 
 .tlinecover{    margin-top: 6px;
     margin-left: 3px;
@@ -622,11 +645,6 @@ margin-left: 7px;}
 #krakoa {margin-top: 104px}
 #marvelgirl2 {margin-top: 157px}
 #firestar{margin-top:51px;}
-
-#tlineboss{
-    width: 1000px;
-    overflow-x: scroll;
-}
 
 .nametag{ 
 			height:290px;
