@@ -1,9 +1,19 @@
 $(document).ready(function() 
-{$(this).scrollTop(0);
+{
+	$(this).scrollTop(0);
  // $(document).ajaxSend(function(e, xhr, opt){
- //        $("#xlogo").attr("src","placeholder.png");
+ //        $("#xlogo").attr("src","xloader.gif");
  //    });
-    
+    // $(this).bind("mousewheel", function() {
+    //      return false;
+    //  });
+		$(window).load(function() {
+		// for error message
+		$(".loader").css("display","none")
+	});	
+
+
+
 var charnames = [ 
 "marrow","maggott","banshee","professorx","professorx","marvelgirl","marvelgirl", "phoenixforce","rachelsummers","rachelsummers","rachelsummers", "angel","angel","psylocke", "psylocke", "psylocke", "beast","beast","beast","beast","beast","beast","dazzler","moiramactaggert","moiramactaggert","moiramactaggert","moiramactaggert","moiramactaggert","moiramactaggert","moiramactaggert","moiramactaggert","moiramactaggert","amandasefton","amandasefton","amandasefton","amandasefton","sunder","legion","sharonfriedlander","tomcorsi", "tomcorsi","alysandestuart","multipleman","multipleman","multipleman","multipleman","siryn","siryn","siryn","jubilee","gambit","gambit","bishop", "cannonball","cannonball","cannonball","ceciliareyes","ceciliareyes","cable","nealshaara","moonstar","moonstar","moonstar","moonstar","northstar","northstar","frenzy","omerta","omerta","whitequeen","whitequeen","whitequeen","chamber","chamber","chamber","sunpyre","sunpyre","stacyx","stacyx","stacyx","lifeguard","slipstream","husk","juggernaut","fantomex","fantomex","eva","eva","eva","beak","beak","dust","stepfordcuckoos","stepfordcuckoos","stepfordcuckoos","stepfordcuckoos","stepfordcuckoos","stepfordcuckoos","shenxorn","mystique","vulcan","darwin","cyclops","sway","warpath","warpath",
 "warpath","ladymastermind","ladymastermind","omegasentinel","omegasentinel","sabretooth","armor","armor","pixie","karma","sunspot","sunspot","aurora","magma","magma","madisonjeffries","drnemesis","drnemesis","drnemesis","magik","namor","namor","danger","domino","cloak","dagger","x23","x23","x23","hopesummers","warbird","firestar","firestar","iceman","iceman","m","forgetmenot","colossus","colossus","magneto","magneto","nightcrawler","rogue","polaris","shadowcat","shadowcat","changeling","havok","wolverine","wolverine","storm","sunfire","thunderbird",
@@ -22,18 +32,22 @@ var charnames2 = [
 
 function namer()
 	{	
+	// 	$("#info2").load(function() {
+	// 	// Animate loader off screen
+	// 	$(".loader").css("display","none")
+	// });	
 		var x = $("#charnames").val().toLowerCase();
 		$("#expos").css("display","none")
 		$("#charnames").val("");
 		// var x = document.getElementById("charnames").value;
-		$("#mainholder").css("margin-left","2%");
+		$("#mainholder").attr("id","mainholder2");
 		$("#datacontain").css("display","none");
-	 	$("#info").css("height", "0px","width", "0px");
-	 	$("#info2").css("top","0px");
-	 	$("#firstapp").css("height", "0px","width","0px");
-		$("#xlogo").attr("src","placeholder.png");
-		$("#pic").css("height", "300px","width", "300px");
+		$("#xlogo").attr("src","xloader.gif");
+		// $("#xlogo").attr("class","loader");
+		$("#info2").css("left","0px","top", "0px");	
 		$("#marquee").animate({ marginTop: "303px",marginLeft: "60px"},200);
+		$(".loader").css("display","block");
+		$(".dbholder").attr("class","dbholderA");
 
 //  below only happens if the name is correct. therefore the place holder image hidden by the x logo is always saying ERROR. BUT if it's 
 // not an error then below happens. this solves the error message for the user who uses wrong name. w/o having to run error message
@@ -48,45 +62,47 @@ function namer()
 
 	 if (x === charnames2[v])
 	 	{ 
-	 		$("#xlogo").attr("src","profilepic/"+charnames[v]+".png");
-	 		$("#cover").attr("src","covers/"+charnames[v]+".jpg");
-	 		$("#info2").css("right","0px","top", "0px");	 	
+	 		$("#xlogo").attr("src","xloader.gif");
+	 		$("#cover").attr("src","xloader2.gif");	
+	 		$("#xlogo").attr("src","profilepic/"+charnames[v]+".jpg");
+	 		$("#cover").attr("src","covers/"+charnames[v]+".jpg");	 			 	
 	 		$("#datacontain").css("display","block");
-	 		$("#info").css("height","504px","width","400px");
-	 		$("#firstapp").css("height","504px","width","400px");
+	 		$("#info").attr("id","info1");
 	 		$("#info2").load("info/"+charnames[v] +".txt");
 	 		$("#info2").draggable({ axis: "y" });
-	 		$("#info2").css("left","0px","top", "0px");	
-	 		
-	 		
+	 		$("#info2").draggable({ scroll: false });	
+	 		$(".loader").css("display","none");
 	 	}
 	 else if (x === charnames[t])
 	 	{
-	 		$("#xlogo").attr("src", "profilepic/"+charnames[t]+".png");
+	 		$("#xlogo").attr("src","xloader.gif");
+			$("#cover").attr("src","xloader2.gif");
+	 		$("#xlogo").attr("src", "profilepic/"+charnames[t]+".jpg");
 	 		$("#cover").attr("src","covers/"+charnames[t]+".jpg");
 	 		$("#info2").css("right","0px","top", "0px");	 		
 	 		$("#datacontain").css("display","block");
-	 		$("#info").css("height","504px","width","400px");
-	 		$("#firstapp").css("height","504px","width","400px");
-	 		$("#info2").load( "info/"+charnames[t] +".txt");
-	 		$("#info2").draggable({ axis: "y" });	 		
+	 		$("#info").attr("id","info1");
+	 		$("#info2").load("info/"+charnames[t] +".txt");
+	 		$("#info2").draggable({ axis: "y" });	
+	 		$("#info2").draggable({ scroll: false });	 		
 	 		$("#info2").css("left","0px","top", "0px");
+	 		$(".loader").css("display","none");
 	 	}
 
 		};
 
-	 
+	 // 
 	 		 		
-
+// parentnodes and event targets used to individualize elements of the same class.
     $(".tlinepic").click(function(event) 
     {
        var z = (event.target.id);
        var y = (event.target.className)
        var par =(event.target.parentNode.parentNode.id);
        var parwid = $("#"+z).parent().parent().width();
-      
-
-       if (parwid === 202)
+       var winwidth = $(window).width();
+ 		
+ 		if (parwid === 202)
        {
        $("#"+z).parent().parent().animate({width: "535px"},1000);
        $("#"+z).parent().parent().parent().animate({width: "589px"},1000);
@@ -105,8 +121,7 @@ function namer()
 		$("#"+y+par+"lister").load( "brief/"+z+".txt");
 		$("#"+"briefpic"+par).attr("src","tlineprof/"+z+".jpg");
        $("#"+y+par).css("display","inline-block","float","left"); 
-
-       $("#"+y+par).attr("src","covers/"+z+".jpg").css("height","202px","width","165px");
+       $("#"+y+par).attr("src","covers/"+z+".jpg");
       $("#listholder"+par).fadeIn(2000);
       $("#listholder"+par).css("display","inline-block","float","left");
     });
@@ -150,26 +165,31 @@ function namer()
 
 function modalreset()
 	{	
-		$("#xlogo").attr("src","xlogo.png");
+		$("#xlogo").attr("src","xlogo2.png");
 		$("#datacontain").fadeOut(200);
 	 	$("#firstapp").animate({height: "0",width:"0px"},200);
-	 	$("#mainholder").css("margin-left","40%");
-	 	$("#xlogo").animate({height: "50px",width: "50px"},10).fadeIn(100).animate({height: "200px",width: "200px"},200);
+	 	$("#mainholder2").attr("id","mainholder");
 	 	$("#marquee").animate({ marginTop: "206px",marginLeft: "21px"},100);
-		$("#expos").css("display","inline-block")
+		$("#expos").css("display","inline-block");
+		$(".loader").css("display","none");
+		$(".dbholderA").attr("class","dbholder");
 	};
 
 
-$("#tlinebutt").click(function()
+function backtotline()
 {	
+	$("#timelinecontainer").show();
 	$("#tlinebutt").css("display","none");
 	$("#dbasebutthold").css("display","block");	
-	$("#dbholder").fadeOut(1000);
+	$(".dbholder").fadeOut(1000);
+	$(".dbholderA").fadeOut(1000);
 	$("#bod").css("overflow","visible");
 	$("#transit").animate({height: "0px"},1500);
-});
+	$(".bod1").attr("class","bod");
+	$(".loader").css("display","none");
+};
 
-$("#dbasebutt").click(function()
+$("#pushbutt").click(function()
 {	
 
 	// $(".listholder").css("display","none");	
@@ -177,12 +197,18 @@ $("#dbasebutt").click(function()
     // $("#th13a,#th23,#th31").attr("class","tlineholder3").animate({width: "305px"},1000);   
     // $(".tlineholder").animate({width: "100px"},1000);   
     // timeline reset button?
-	$("#transit").animate({height: "2000px"},1500);
+    $("#timelinecontainer").hide()
+	$("#transit").show().animate({height: "2000px"},2000);
 	$("#dbasebutthold").css("display","none");
 	$("#tlinebutt").css("display","block");	
-	$("#dbholder").delay(1000).fadeIn(1000);
+	$(".dbholder").delay(1000).fadeIn(1000);
+	$(".dbholderA").delay(1000).fadeIn(1000);
 	$('html,body').scrollTop(0);
-	$("#bod").css("overflow","hidden");
+	$(".bod").attr("class","bod1");
+	$(".loader").css("display","block");
+	$("#menu").bind("mousewheel", function() {
+         return false;
+     });
 
 });
 
@@ -193,9 +219,10 @@ $("#top").click(function()
 });
 
 $("#pushbutt").click(namer);
-// $("#pushbutt").click(validator);
 $("#closer").click(modalreset);
-$("#xlogo").click(modalreset);
+// $("#xlogo").click(modalreset);
+$(".loader").click(backtotline);
+$("#closer").click(backtotline);
 $("#main").draggable();
 
 $("#charnames").keypress(function(e) 
