@@ -1,60 +1,364 @@
-.proftitle{text-transform: uppercase;}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-.tlineholder{margin-left:2%;
-background-color: orange;
-clear:both;
-margin-top: 1%;
-	float:left;
-width:30%;}
-.profholder{float:left;
-width:15%;}
+	html,
+	body,
+	div,
+	span,
+	applet,
+	object,
+	iframe,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	blockquote,
+	pre,
+	a,
+	abbr,
+	acronym,
+	address,
+	big,
+	cite,
+	code,
+	del,
+	dfn,
+	em,
+	img,
+	ins,
+	kbd,
+	q,
+	s,
+	samp,
+	small,
+	strike,
+	strong,
+	sub,
+	sup,
+	tt,
+	var,
+	b,
+	u,
+	i,
+	center,
+	dl,
+	dt,
+	dd,
+	ol,
+	ul,
+	li,
+	fieldset,
+	form,
+	label,
+	legend,
+	table,
+	caption,
+	tbody,
+	tfoot,
+	thead,
+	tr,
+	th,
+	td,
+	article,
+	aside,
+	canvas,
+	details,
+	embed,
+	figure,
+	figcaption,
+	footer,
+	header,
+	hgroup,
+	menu,
+	nav,
+	output,
+	ruby,
+	section,
+	summary,
+	time,
+	mark,
+	audio,
+	video {
+	  margin: 0;
+	  padding: 0;
+	  border: 0;
+	  font-size: 100%;
+	  font: inherit;
+	  vertical-align: baseline;
+	}
 
-.tlineholderSingle{margin-left:2%;
-background-color: orange;
-clear:both;
-margin-top: 1%;
-	float:left;
-width:10%;}
-.profholderSingle{float:left;
-width:50%;}
+
+	/* HTML5 display-role reset for older browsers */
+
+	article,
+	aside,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	hgroup,
+	menu,
+	nav,
+	section {
+	  display: block;
+	}
 
 
-.tlineholderDouble{margin-left:2%;
-background-color: orange;
-clear:both;
-margin-top: 1%;
-	float:left;
-width:20%;}
-.profholderDouble{float:left;
-width:40%;}
+@font-face {font-family: bn;
+			src: url(bn.otf);}
 
-.tlineholderTriple{margin-left:2%;
-background-color: orange;
-clear:both;
-margin-top: 1%;
-	float:left;
-width:20%;}
-.profholderTriple{float:left;
-width:30%;}
+@font-face {font-family: roboto;
+			src: url(robotolight.ttf);}		
 
-.tlineholderQuint{margin-left:2%;
-background-color: orange;
-clear:both;
-margin-top: 1%;
-	float:left;
-width:40%;}
-.profholderQuint{float:left;
-width:20%;}
+body{    background-color: #730000;}
+
+#xlogo    {    position: fixed;
+    width: 75%;
+    margin-top: -8%;
+    margin-left: -6%;
+	    -webkit-transition: margin-left .5s, margin-top .5s, width .5s;
+    transition: margin-left .5s, margin-top .5s, width .5s;
+display: block;}
 
 
-.tlineholderSext{margin-left:2%;
-background-color: orange;
-clear:both;
-margin-top: 1%;
-	float:left;
-width:45%;}
-.profholderSext{float:left;
-width:16%;}
+#xlogo2 {
+    position: fixed;
+    width: 20%;
+    margin-top: 8%;
+    margin-left: 15%;
+    	    -webkit-transition: margin-left .5s, margin-top .5s, width .5s;
+    transition: margin-left .5s, margin-top .5s, width .5s;
+    display: block;
+}    
+
+#title{font-size: 3vw;
+font-family: bn;}
+
+#start{font-size: 1.5vw;
+font-family: bn;
+cursor:pointer;}
 
 
-.profpic{width:100%;}
+#infobox {
+	color:white;
+    width: 20%;
+    position: fixed;
+    margin-left: 75%;
+    text-align: center;
+    margin-top: 22%;
+    font-family: roboto;
+    font-size: 0.9vw;
+    	        -webkit-transition: margin-left .5s, margin-top .5s;
+        transition: margin-left .5s, margin-top .5s;
+}
+
+#infobox2 {
+	color:white;
+    width: 20%;
+    position: fixed;
+    margin-left: 15%;
+    text-align: center;
+    margin-top: 30%;
+    font-family: roboto;
+    font-size: 0.9vw;
+    -webkit-transition: margin-left .5s, margin-top .5s;
+        transition: margin-left .5s, margin-top .5s;
+}
+
+
+#infoholdermaster{
+    position: fixed;
+    width: 50%;
+    height: 76%;
+    z-index: 100;
+    margin-top: 6%;
+    margin-left: 25%;
+    display:none;
+    overflow: hidden
+}
+#infoholder{
+background-color:black;
+width: 102.5%;
+height: 100%;
+z-index: 100;
+overflow-y: scroll;
+opacity: .85}
+
+#proftitlepop{color: white;
+position: fixed;
+margin-top: 5%;
+margin-left: 1%;
+font-family: bn;
+font-size: 2vw;}
+
+#popdoc  {  width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 3;
+     opacity: 0.75;
+     display:none;}
+#closer {
+	display:none;
+position: fixed;
+margin-left: 50.5%;
+width: 2%;
+opacity: .8;
+cursor:pointer;
+}     
+
+#iholdpic{position: fixed;
+margin-left: 1%;
+margin-top: 8%;
+height: 25%;}
+
+#coverpic{position: fixed;
+margin-left: 13%;
+margin-top: 8%;
+height: 25%;}
+
+#shorttexthold{
+width: 20%;
+position: fixed;
+margin-left: 1%;
+margin-top: 22%;
+}
+
+#texthold{
+    width: 50%;
+    margin-left: 48%;
+    margin-top: 1%;
+}
+
+.infostyle{    font-family: roboto;
+    font-size: 0.9vw;
+line-height: 180%;
+color:white;}
+
+
+#tlinebar    {background-color: black;
+    width: 2%;
+    height: 0%;
+    margin-left: 52%;
+    position:fixed;
+pointer-events:none;
+    -webkit-transition: height 1s;
+        transition: height 1s;}
+
+
+.yearholder{
+    position: absolute;
+    /* float: left; */
+    /* width: 3.75%; */
+    /* height: inherit; */
+    background-color: black;
+    z-index: 1;
+    margin-left: -4%;
+    cursor:pointer;
+}
+
+.year{        font-size: 1.0vw;
+    font-family: bn;
+     margin-left: 6%; 
+    color: white;
+display: none}
+
+.closer{display: none;
+    position: absolute;
+    font-size: 1.1vw;
+    font-family: bn;
+    margin-left: -3.25%;
+    color: white;
+    margin-top: 1%;
+cursor:pointer;}
+
+
+.proftitle{
+	    text-align: center;
+    font-size: 1vw;
+    font-family: bn;
+    color:white;
+    text-transform: uppercase;}
+
+.tlineholder{margin-left: 52%;
+    /* background-color: orange; */
+    clear: both;
+    margin-top: 1%;
+    float: left;
+    width: 44%;
+    z-index: 50;
+    overflow: hidden;
+    padding-left: 4%;}
+
+.profholder{width:15%;
+margin-left: -30%;
+    display: inline-table;
+	    -webkit-transition: margin-left .75s;
+    transition: margin-left .75s;}
+
+.tlineholderSingle{margin-left: 52%;
+    /* background-color: orange; */
+    clear: both;
+    margin-top: 1%;
+    float: left;
+    width: 44%;
+    z-index: 50;
+    overflow: hidden;
+    padding-left: 4%;}
+
+
+
+.tlineholderDouble{margin-left: 52%;
+    /* background-color: orange; */
+    clear: both;
+    margin-top: 1%;
+    float: left;
+    width: 44%;
+    z-index: 50;
+    overflow: hidden;
+    padding-left: 4%;}
+
+
+.tlineholderTriple{margin-left: 52%;
+    /* background-color: orange; */
+    clear: both;
+    margin-top: 1%;
+    float: left;
+    width: 44%;
+    z-index: 50;
+    overflow: hidden;
+    padding-left: 4%;}
+
+
+.tlineholderQuint{margin-left: 52%;
+    /* background-color: orange; */
+    clear: both;
+    margin-top: 1%;
+    float: left;
+    width: 44%;
+    z-index: 50;
+    overflow: hidden;
+    padding-left: 4%;}
+
+
+
+.tlineholderSext{margin-left: 52%;
+    /* background-color: orange; */
+    clear: both;
+    margin-top: 1%;
+    float: left;
+    width: 44%;
+    z-index: 50;
+    overflow: hidden;
+    padding-left: 4%;}
+
+
+
+.profpic{width:100%;
+cursor:pointer;}
