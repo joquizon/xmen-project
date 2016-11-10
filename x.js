@@ -59,7 +59,7 @@ var charnames = ["professor x"
 ,"white queen"
 ,"xorn"
 ,"chamber"
-,"stacy x"
+,"stacyx"
 ,"lifeguard"
 ,"slipstream"
 ,"husk"
@@ -69,7 +69,7 @@ var charnames = ["professor x"
 ,"beak"
 ,"dust"
 ,"stepford cuckoos"
-,"shen xorn"
+,"shenxorn"
 ,"mystique"
 ,"vulcan"
 ,"darwin"
@@ -117,6 +117,7 @@ var charnames = ["professor x"
 				{	
 					var ttl = $(this).parent().attr("id");
 					var xactual = charnames[ttl]
+					var xactualR = $("#xactual")
 					$(this).text(xactual);
 				});
 			 $(this).each(function()
